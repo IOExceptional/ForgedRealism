@@ -1,0 +1,38 @@
+package com.gmail.leewalkergm.realism;
+
+import net.minecraft.block.Block;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.DamageSource;
+import net.minecraftforge.client.IItemRenderer;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+
+public abstract class PunchDamageSystem
+{
+
+    public static void DamageEntity(PlayerInteractEvent event) 
+    {
+        if (event.action != PlayerInteractEvent.Action.LEFT_CLICK_BLOCK) 
+        {
+            return;
+        }
+
+        EntityPlayer player = event.entityPlayer;
+        Block block = player.worldObj.getBlock(event.x, event.y, event.z);
+        float hardness = block.getBlockHardness(player.worldObj, event.x, event.y, event.z);
+
+        if (Math.abs(hardness) >= 1) 
+        {
+            ItemStack itemInHand = player.getItemInUse();
+            
+            System.out.println("player: " + player);
+            
+            //if(isTool)
+            {
+                player.attackEntityFrom(DamageSource.generic, hardness);
+            }
+        }
+    }
+}

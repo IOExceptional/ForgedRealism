@@ -1,0 +1,56 @@
+package com.gmail.leewalkergm.realism;
+
+import net.minecraft.block.Block;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraftforge.event.entity.player.AttackEntityEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+
+import com.gmail.leewalkergm.realism.lib.ProxyCommon;
+import com.gmail.leewalkergm.realism.lib.References;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
+
+@Mod(modid = References.MODID, version = References.VERSION)
+public class RealismMod
+{
+	@SidedProxy(clientSide = References.Client, serverSide = References.Common)
+	
+	public static ProxyCommon Proxy;
+	
+	//Items
+	
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+    	Proxy.regiserRenderInformation();	
+    }
+    
+    @EventHandler
+    public void onPlayerDamageBlock(PlayerInteractEvent event)
+    {
+    	EntityPlayer player = event.entityPlayer;
+    	
+    }
+    
+    public RealismMod()
+    {
+    	registerItems();
+    }
+
+	private void registerItems() 
+	{
+		//Item Initialisation
+		//Item itemObject = new ItemObject(909090);
+		
+		
+		//Item Registry
+		//GameRegistry.registerItem(itemObject, "Name");
+	}
+}

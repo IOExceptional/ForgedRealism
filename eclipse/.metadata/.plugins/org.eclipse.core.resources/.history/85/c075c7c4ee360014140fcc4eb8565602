@@ -1,0 +1,5 @@
+package com.gmail.leewalkergm.realism.lib;
+
+public class References {
+	public static final String MODID = "RealismMod";
+}

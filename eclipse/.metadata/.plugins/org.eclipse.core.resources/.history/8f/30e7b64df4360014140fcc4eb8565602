@@ -1,0 +1,10 @@
+Systems to add:
+    Temperature
+        - Need clothes on to stay warm in snow (leather keeps warmest)
+        - When temperature is < (lowerThreshold) move a lot slower
+        - When temperature is > (higherThreshold) lose lots of water
+    Water Level
+        - Need liquid level to be OK or else you start losing sight
+        - Add water pump and containers
+    Punching Hurts
+        - Gloves reduce punching damage

@@ -20,3 +20,5 @@ README.txt
 nbproject
 /gradle
 /eclipse
+/*.project
+/*.classpath

@@ -1,9 +1,6 @@
 package com.gmail.leewalkergm.realism;
 
-import net.minecraft.block.Block;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent.Action;
+import net.minecraftforge.common.MinecraftForge;
 
 import com.gmail.leewalkergm.realism.lib.ProxyCommon;
 import com.gmail.leewalkergm.realism.lib.References;
@@ -12,7 +9,6 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = References.MODID, version = References.VERSION)
 public class RealismMod

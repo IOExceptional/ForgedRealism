@@ -8,6 +8,7 @@ package com.gmail.leewalkergm.realism;
 
 import java.util.HashMap;
 import java.util.UUID;
+
 import net.minecraft.entity.player.EntityPlayer;
 
 /**
@@ -37,8 +38,9 @@ public class RealismPlayerManager
 
     private void RegisterPlayer(UUID uniqueId, EntityPlayer player) 
     {
-        _players.put(uniqueId, new RealismPlayer(player));
-        player.
+    	RealismPlayer plr = new RealismPlayer(player);
+        _players.put(uniqueId, plr);
+        System.out.println("Player: " + plr.getUsername() + " has been added.");
     }
     
 }

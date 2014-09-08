@@ -1,8 +1,8 @@
 package com.gmail.leewalkergm.realism;
 
-import java.util.HashMap;
-import java.util.UUID;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
 
 public  class TemperatureSystem 
 {
@@ -16,6 +16,11 @@ public  class TemperatureSystem
     public void UpdatePlayer(EntityPlayer entityPlayer) 
     {
         RealismPlayer plr = _manager.GetRealismPlayer(entityPlayer);
+        
+        int temp = plr.getTemperature();
+        String biome = plr.GetBiome();
+        
+        System.out.println("Current biome: " + biome + ", current temp: " + temp);        
     }
 
     public void AddPlayer(EntityPlayer entityPlayer) 

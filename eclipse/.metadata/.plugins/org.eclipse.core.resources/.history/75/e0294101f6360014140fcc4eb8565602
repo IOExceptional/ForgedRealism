@@ -1,9 +1,0 @@
-package com.gmail.leewalkergm.realism;
-
-public abstract class PunchDamageSystem 
-{
-	public static void DamageEntity(PlayerEntity player, Entity target)
-	{
-		
-	}
-}

@@ -1,8 +1,0 @@
-package com.gmail.leewalkergm.realism.items;
-
-public class ObsidianStick extends Items 
-{
-	public ObsidianStick(int itemId)
-	{
-	}
-}

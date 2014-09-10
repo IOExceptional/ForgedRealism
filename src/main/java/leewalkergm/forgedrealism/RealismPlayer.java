@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.gmail.leewalkergm.realism;
+package leewalkergm.forgedrealism;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -17,7 +17,7 @@ import net.minecraft.world.biome.WorldChunkManager;
  *
  * @author lee
  */
-class RealismPlayer
+public class RealismPlayer
 {
     private final EntityPlayer _player;
     
@@ -72,7 +72,6 @@ class RealismPlayer
     		{
     			System.out.println("World chunk manager is null.");
     		}
-    		System.out.println("Allowed biomes: " + manager.allowedBiomes.size());
     		biomeGen = manager.getBiomeGenAt((int)_player.posX, (int)_player.posZ);
     		biome = biomeGen.biomeName;
     	}

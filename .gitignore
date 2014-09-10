@@ -14,5 +14,4 @@ MinecraftForge-License.txt
 README.txt
 nbproject
 /eclipse
-/*.project
 /*.classpath

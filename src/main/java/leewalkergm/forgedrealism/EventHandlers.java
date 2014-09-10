@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package com.gmail.leewalkergm.realism;
+package leewalkergm.forgedrealism;
 
+import leewalkergm.forgedrealism.systems.TemperatureSystem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;

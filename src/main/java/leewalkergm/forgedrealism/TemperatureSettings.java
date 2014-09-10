@@ -1,4 +1,4 @@
-package com.gmail.leewalkergm.realism;
+package leewalkergm.forgedrealism;
 
 public class TemperatureSettings 
 {

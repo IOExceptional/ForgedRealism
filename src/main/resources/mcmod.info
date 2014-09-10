@@ -1,14 +1,14 @@
 [
 {
-  "modid": "forgerealism",
-  "name": "Forge Realism",
-  "description": "Example mod info blah blah :3",
+  "modid": "forgedrealism",
+  "name": "Forged Realism",
+  "description": "Forged Realism is a mod that introduces some more realistic elements to Minecraft.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
   "authorList": ["Leewalkergm"],
-  "credits": "None other than Lee",
+  "credits": "None as of yet.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

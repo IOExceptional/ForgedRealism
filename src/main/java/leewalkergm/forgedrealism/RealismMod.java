@@ -1,10 +1,10 @@
-package com.gmail.leewalkergm.realism;
+package leewalkergm.forgedrealism;
 
+import leewalkergm.forgedrealism.lib.GuiBuffBar;
+import leewalkergm.forgedrealism.lib.ProxyCommon;
+import leewalkergm.forgedrealism.lib.References;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
-
-import com.gmail.leewalkergm.realism.lib.ProxyCommon;
-import com.gmail.leewalkergm.realism.lib.References;
-
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -33,6 +33,8 @@ public class RealismMod
 
     private void registerItems() 
     {
+    	MinecraftForge.EVENT_BUS.register(new GuiBuffBar(Minecraft.getMinecraft()));
+    	
         //Item Initialisation
         //Item itemObject = new ItemObject(909090);
 

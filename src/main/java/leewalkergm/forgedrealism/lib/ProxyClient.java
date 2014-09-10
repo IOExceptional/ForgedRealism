@@ -1,4 +1,4 @@
-package com.gmail.leewalkergm.realism.lib;
+package leewalkergm.forgedrealism.lib;
 
 public class ProxyClient extends ProxyCommon 
 {

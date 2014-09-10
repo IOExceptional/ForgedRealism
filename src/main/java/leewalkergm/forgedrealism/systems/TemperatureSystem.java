@@ -1,5 +1,7 @@
-package com.gmail.leewalkergm.realism;
+package leewalkergm.forgedrealism.systems;
 
+import leewalkergm.forgedrealism.RealismPlayer;
+import leewalkergm.forgedrealism.RealismPlayerManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize;
@@ -20,7 +22,7 @@ public  class TemperatureSystem
         int temp = plr.getTemperature();
         String biome = plr.GetBiome();
         
-        System.out.println("Current biome: " + biome + ", current temp: " + temp);        
+        //System.out.println("Current biome: " + biome + ", current temp: " + temp);        
     }
 
     public void AddPlayer(EntityPlayer entityPlayer) 

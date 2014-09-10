@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.gmail.leewalkergm.realism;
+package leewalkergm.forgedrealism;
 
 import java.util.HashMap;
 import java.util.UUID;
@@ -17,6 +17,18 @@ import net.minecraft.entity.player.EntityPlayer;
  */
 public class RealismPlayerManager 
 {
+	private static RealismPlayerManager _instance;
+	
+	public static RealismPlayerManager getInstance()
+	{
+		if(_instance == null)
+		{
+			_instance = new RealismPlayerManager();
+		}
+		
+		return _instance;
+	}
+	
     private HashMap<UUID, RealismPlayer> _players;
     
     public RealismPlayerManager() 
